@@ -40,10 +40,7 @@ const updateTimer = () =>{
     if(timeRemaining<=0){
         clearInterval(interval)
         secondsBlock.textContent = '00';
-        secondsBlock.style.color = 'red'
-        minutesBlock.style.color = 'red'
-        hoursBlock.style.color = 'red'
-        daysBlock.style.color = 'red'
+        document.querySelector('.timer').style.color= 'red'
         minutesBlock.textContent = '00';
         hoursBlock.textContent = '00';
         daysBlock.textContent = '00';
